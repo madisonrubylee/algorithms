@@ -12,6 +12,8 @@ class Graph {
     }
 
     addEdge(vertex1, vertex2) {
+        // If I try to add an edge between one and three, that's not going to 
+        // work because we don't have a vertex with the value of three.
         if (this.adjacencyList[vertex1] && this.adjacencyList[vertex2]) {
             this.adjacencyList[vertex1].push(vertex2)
             this.adjacencyList[vertex2].push(vertex1)
