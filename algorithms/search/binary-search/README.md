@@ -1,27 +1,10 @@
 # Binary Search
 
-
-
-## Example
-
-The transformation can be represented by aligning two alphabets; the cipher alphabet is the plain alphabet rotated left or right by some number of positions. For instance, here is a Caesar cipher using a left rotation of three places, equivalent to a right shift of 23 (the shift parameter is used as the key):
-
-```text
-Plain:    ABCDEFGHIJKLMNOPQRSTUVWXYZ
-Cipher:   XYZABCDEFGHIJKLMNOPQRSTUVW
-```
-
-When encrypting, a person looks up each letter of the message in the "plain" line and writes down the corresponding letter in the "cipher" line.
-
-```text
-Plaintext:  THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG
-Ciphertext: QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD
-```
+In computer science, binary search, also known as half-interval search, logarithmic search, or binary chop, is a search algorithm that finds the position of a target value within a sorted array. Binary search compares the target value to the middle element of the array; if they are unequal, the half in which the target cannot lie is eliminated and the search continues on the remaining half until it is successful. If the search ends with the remaining half being empty, the target is not in the array.
 
 ## Complexity
 
-- Time: `O(|n|)`
-- Space: `O(|n|)`
+- Time: `O(logn)`
 
 ## References
-
+- [Wikipedia](https://en.wikipedia.org/wiki/Binary_search_algorithm)

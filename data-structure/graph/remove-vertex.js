@@ -34,8 +34,8 @@ class Graph {
     removeVertex(vertex) {
         if (!this.adjacencyList[vertex]) return undefined
         while(this.adjacencyList[vertex].length) {
-            let temp = this.adjacencyList[vertex].pop()
-            this.removeEdge(vertex, temp)
+            let temp = this.adjacencyList[vertex].pop() // "C"
+            this.removeEdge(vertex, temp)   // removeEdge("D", "C")
         }  
         delete this.adjacencyList[vertex] 
         return this
