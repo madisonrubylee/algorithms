@@ -19,5 +19,17 @@ const canJump = function (nums) {
   while (idx < nums.length) {
     // max 업데이트
     max = Math.max(max, idx + nums[idx]);
+
+    // max > idx => 이전 step 보다 더 갈수있음을 뜻함
+    if (max >= target) {
+      return true;
+    }
+
+    if (max <= idx && nums[idx] === 0) {
+      return false;
+    }
+
+    idx++;
   }
+  return false;
 };
